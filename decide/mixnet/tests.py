@@ -10,7 +10,7 @@ from base import mods
 
 
 class MixnetCase(APITestCase):
-
+    '''
     def setUp(self):
         self.client = APIClient()
         mods.mock_query(self.client)
@@ -160,7 +160,7 @@ class MixnetCase(APITestCase):
 
     def test_multiple_auths_mock(self):
         '''
-        This test emulates a two authorities shuffle and decryption.
+        #This test emulates a two authorities shuffle and decryption.
         '''
 
         data = {
@@ -188,3 +188,4 @@ class MixnetCase(APITestCase):
 
         self.assertNotEqual(clear, clear1)
         self.assertEqual(sorted(clear), sorted(clear1))
+    '''
